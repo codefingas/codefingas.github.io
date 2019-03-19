@@ -1,0 +1,415 @@
+body{
+    font: Abel;
+    color: white;
+   background-image: url("../img/NOUN-Headquarters.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 1000px;
+     overflow-x: hidden;
+     background-color: #628297;
+}
+
+.panel {
+    color: black;
+}
+
+.img-in-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.margined {
+    margin-top: 20px;
+}
+
+.side-nav-control {
+    cursor: pointer;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    width: 25px;
+    z-index: 800 ;
+}
+
+img.logo {
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 25px;
+    position: fixed;
+}
+
+.panel2 {
+    margin-left: 15px;
+}
+
+.panel-margins {
+    margin-bottom: -15px !important;
+}
+
+
+.panel {
+    background-color: #ffffffcf;
+}
+
+li.list-group-item{
+    background-color: #ffffff0d;
+}
+
+li a {
+    cursor: pointer;
+}
+
+ul.itemNav > li {
+    background-color: rgba(255, 255, 255, 0.51);
+    color: white;
+}
+
+ul.itemNav > li > a {
+    color: white !impor;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /*100% Full-height*/
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .bigClosebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+/* css for progress meter */
+@-webkit-keyframes load {
+    0% {
+        stroke-dashoffset:0
+    }
+}
+@-moz-keyframes  load {
+0% {
+stroke-dashoffset:0
+}
+}
+
+@keyframes load {
+0% {
+stroke-dashoffset:0
+}
+}
+
+@-webkit-keyframes textLoad {
+from {
+opacity: 0.5;
+height: 0;
+}
+to {
+opacity: 1;
+height: 100%;
+}
+}
+@-moz-keyframes  textLoad {
+from {
+opacity: 0;
+height: 0;
+}
+to {
+opacity: 1;
+height: 100%;
+}
+}
+
+@keyframes textLoad {
+from {
+opacity: 0.5;
+height: 0;
+}
+to {
+opacity: 1;
+height: 100%;
+}
+}
+
+
+/* this part controls the text in the loader the color especially */
+.rating>li.success {
+display: inline-block;
+position: relative;
+text-align: center;
+color: #3c763d;
+font-family: Lato;
+font-weight: 100;
+/* margin: 2rem; */
+}
+/* end of the part that controls the text in the loader the color especially */
+
+/* this part controls the text in the loader the color especially */
+.rating>li.warning {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #8a6d3b;
+    font-family: Lato;
+    font-weight: 100;
+    /* margin: 2rem; */
+    }
+    /* end of the part that controls the text in the loader the color especially */
+
+    /* this part controls the text in the loader the color especially */
+.rating>li.danger {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #a94442;
+    font-family: Lato;
+    font-weight: 100;
+    /* margin: 2rem; */
+    }
+    /* end of the part that controls the text in the loader the color especially */
+
+.rating>li:before {
+content: attr(data-name);
+position: absolute;
+width: 100%;
+bottom: -2rem;
+font-weight: 400;
+}
+
+.rating>li:after {
+content: attr(data-percent);
+position: absolute;
+width: 100%;
+top: 2.4rem;
+left: 0;
+font-size: 2rem;
+text-align: center;
+animation: textLoad 2s;
+}
+
+.rating svg {
+width: 8rem;
+height: 8rem;
+}
+
+.rating svg:nth-child(2) {
+position: absolute;
+left: 0;
+top: 0;
+transform: rotate(-90deg);
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+}
+
+
+/* this part of the loader controls the apperance of the bar especially the color */
+.rating svg:nth-child(2) path.success {
+fill: none;
+/* stroke-width: 25; */
+stroke-width: 5;
+stroke-dasharray: 629;
+/* stroke: rgba(255, 255, 255, 0.9); */
+stroke: #3c763d;
+-webkit-animation: load 3s;
+-moz-animation: load 3s;
+-o-animation: load 3s;
+animation: load 3s;
+}
+/* end of the part of the loader controls the apperance of the bar especially the color */
+
+/* this part of the loader controls the apperance of the bar especially the color */
+.rating svg:nth-child(2) path.danger {
+    fill: none;
+    /* stroke-width: 25; */
+    stroke-width: 5;
+    stroke-dasharray: 629;
+    /* stroke: rgba(255, 255, 255, 0.9); */
+    stroke: #a94442;
+    -webkit-animation: load 3s;
+    -moz-animation: load 3s;
+    -o-animation: load 3s;
+    animation: load 3s;
+    }
+    /* end of the part of the loader controls the apperance of the bar especially the color */
+
+    /* this part of the loader controls the apperance of the bar especially the color */
+.rating svg:nth-child(2) path.warning {
+    fill: none;
+    /* stroke-width: 25; */
+    stroke-width: 5;
+    stroke-dasharray: 629;
+    /* stroke: rgba(255, 255, 255, 0.9); */
+    stroke: #8a6d3b;
+    -webkit-animation: load 3s;
+    -moz-animation: load 3s;
+    -o-animation: load 3s;
+    animation: load 3s;
+    }
+    /* end of the part of the loader controls the apperance of the bar especially the color */
+
+/* end of css for progress meter */
+
+.rating .panel-body {
+    padding: 0;
+}
+
+.teacherName {
+    top: 2rem;
+    margin-top: 35px;
+}
+
+.studentsPassed {
+    top: 2rem;
+    margin-top: 35px;
+}
+
+.teachersStudentSuccesses {
+    width: 25%;
+}
+
+.teachersRatingInfo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.subjectTitle {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 770px){
+
+body{
+    color: white;
+    background-image: url("../img/NOUN-Headquarters.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+        overflow-x: hidden;
+        min-height: 500px;/
+}
+
+.subjectTitle {
+    margin-top: 0;
+}
+
+.side-nav-control {
+    position: fixed;
+    top: 2%;
+    left: 5%;
+    z-index: 800;
+}
+
+    .container-fluid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .students .container {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    div.students .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    
+    img.logo {
+        width: 150px;
+        margin-top: 50px;
+        margin-left: -25px;
+        position: relative;
+    }
+
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    div.side-nav {
+       width: 270px;
+       margin-left: 80px;
+    }
+
+    div.side-nav-area {
+        width: 650px;
+    }
+
+    
+    .sweet-slide {
+        transition-duration: 0.5s;
+        margin-left: 0 !important;
+    }
+    
+    .transit {
+        transition-duration: 0.5s;
+    }
+
+    .main-panel-area {
+        height: 700px; 
+    }
+
+    .panel2 {
+        margin-left: -8px;
+        margin-bottom: 1px !important;
+    }
+
+    .panel3 {
+            margin-left: -8px;
+    }
+
+}

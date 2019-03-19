@@ -1,0 +1,538 @@
+<!-- created by : 
+    Ezekiel Saturday,
+    Diector, Wickend Initiatives.
+    Software developer | Swim coach | Teacher,
+    Instagram & twitter : @codefingers
+
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="refresh" content=" ">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" type="text/css"  href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css"  href="./assets/plugins/font_awesome/css/font-awesome.min.css">
+     <link rel="stylesheet" type="text/css"  href="./assets/plugins/animate.css">
+ 
+     <link rel="stylesheet" type="text/css"  href="./assets/css/main.css">
+     <!-- <link rel="stylesheet" href="./assets/css/otherMeters.css"> -->
+     <title>Joel Adegbola Abiodun | Student Evaluation Program | Tutor Marked Assessment by Noun </title>
+ </head>
+ <body>
+
+<div class="container-fluid">
+
+        <div id="mySidenav" class="sidenav text-center">
+            <a href="javascript:void(0)" class="closebtn">&times;</a>
+
+            <img src="./assets/img/profilePicture.jpg" width="120px" alt="students profile picture" class="responsive img-circle">
+            <br/>
+            <br/>
+            <button class="btn btn-success" data-toggle="modal" href='#modal-id'>View Profile</button>
+
+            <br/>
+            <br/>
+            <br/>
+            <a href="#" data-target="#carousel-id" data-slide-to="0">Home</a>
+            <a href="#" onclick="app().teachersProfile();">Teachers</a>
+            <a href="#" class="toStudentSubjects">Students</a>
+        </div>
+
+            
+        <!-- Use any element to open the sidenav -->
+        <span class="side-nav-control">
+            <i class="fa fa-bars"></i>
+        </span>
+              
+        <div id="carousel-id" class="carousel slide" data-ride="carousel" data-interval="false">
+            <!-- <ol class="carousel-indicators">
+                <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+                <li data-target="#carousel-id" data-slide-to="1" class="active"></li>
+                <li data-target="#carousel-id" data-slide-to="2" class=""></li>
+            </ol> -->
+            <div class="carousel-inner">
+                <div class="item  the-panels main-panel-area active">
+
+                    <!-- HOME SCREEN PART FOR SMALL SCREENS -->
+                        <div class="container-fluid panel-area hidden-md hidden-lg">
+                                <div class="row panel-margins panel1 hidden-md hidden-lg">
+                                        <div class="col-sm-1 col-md-6 text-left hidden-md hidden-lg">
+                                            <img src="./assets/img/noun.png" alt="School Logo" class="responsive logo transit">
+                                        </div>
+
+                                        <div class="col-sm-11 col-md-6 right-block side-nav-area hidden-md hidden-lg">
+                                                <div class="col-sm-11 col-md-6 right-block side-nav-area">
+                                                         <!-- these are the panels in the home page on small screens -->
+                                                            <div class="side-nav hidden-md hidden-lg">
+                                                                    <div class="side-nav1 hidden-md hidden-lg">
+                                                                            <div class="panel panel-success side-nav transit hidden-md hidden-lg">
+                                                                                    <div class="panel-heading"><i class="fa fa-university"></i>  National open University</div>
+                                                                                    <div class="fold">
+                                                                                            <div class="panel-body hidden-md hidden-lg">
+                                                                                                    <p>The National Open University of Nigeria is a Federal Open and Distance Learning institution, the first of its kind in the West African sub-region. It is Nigeria's largest tertiary institution in terms of student numbers and is popularly referred to as 'NOUN'. 
+                                                                                                        </p>
+                                                                                                </div>
+                                                                                                <ul class="list-group fold hidden-md hidden-lg">
+                                                                                                        <li class="list-group-item"><a target="_blank" href="http://http://nouedu.net/">Homepage</a></li>
+                                                                                                        <li class="list-group-item"><a target="_blank"  href="http://http://nouedu.net/page/how-to-apply">Apply for admission</a></li>
+                                                                                                        <li class="list-group-item"><a target="_blank"  href="http://http://nouedu.net/courseware">e Courseware</a></li>
+                                                                                                        <li class="list-group-item"><a target="_blank"  href="http://http://nouedu.net/user/login">Login</a></li>
+                                                                                                    
+                                                                                                    </ul>
+                                                                                            </div>
+                                                                                                <hr/>
+                                                                            </div>
+                                                                    </div>
+                                                            </div>
+
+                                                            <div class="row panel-margins panel2 hidden-md hidden-lg">
+                                                                <div class="col-sm-1 col-md-6 text-left hidden-md hidden-lg">
+                                                                        
+                                                                </div>
+                                                                <div class="col-sm-11 col-md-6 right-block side-nav-area panel2 hidden-md hidden-lg">
+                                                                        <div class="side-nav hidden-md hidden-lg">
+                                                                                <div class="side-nav1">
+                                                                                <div class="panel panel-success side-nav transit ">
+                                                                                    <div class="panel-heading"><i class="fa fa-user-circle-o"></i> Teachers</div>
+                                                                                    <div class="fold">
+                                                                                        <div class="panel-body">
+                                                                                            <p> Teachers at Noun, form a great majority of the impact the School can give,   Here, you can see each teacher's perfomances and how the students are coping under thier tutelage.
+                                                                                            </p>
+                                                                                        </div>
+                                                                                                <ul class="list-group fold">
+                                                                                                    <li class="list-group-item navigation  teacherProfilePage" ><a class="text-primary">Profile</a></li>
+                                                                                                    <li class="list-group-item navigation"><a class="text-primary toSubjects">Subjects</a></li>
+                                                                                                    <li class="list-group-item navigation"><a class="text-primary  toTeachersStatistics">Statistics</a></li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                            <hr/>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row panel3 hidden-lg hidden-md">
+                                                                    <div class="col-sm-1 col-md-6 text-left">
+                                                                            
+                                                                    </div>
+                                                                    <div class="col-sm-11 col-md-6 right-block side-nav-area panel3 hidden-md hidden-lg">
+                                    
+                                                                        <!-- these are the panels in the home page -->
+                                                                        <div class="side-nav hidden-md hidden-lg">
+                                                                            <div class="side-nav1">
+                                                                            <div class="panel panel-success side-nav transit ">
+                                                                                <div class="panel-heading"><i class="fa fa-user-o"></i> Students</div>
+                                                                                        <div class="fold">
+                                                                                            <div class="panel-body">
+                                                                                                <p> 
+                                                                                                    Students educational strengths form the back bone of the school's goals.<br/>
+                                                                                                    Education in defination is the transmission of what is worthwhile from the custodians (teachers) to the learners. <br/>
+                                                                                                    Here, you'll be able to evaluate students and make value judgment about their capacity.<br/>
+                                                                                                    As well as spot areas they can be better.
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <ul class="list-group fold">
+                                                                                                <li class="list-group-item"><a target="_blank"  href="http://http://nouedu.net/"> Noun school Homepage</a></li>
+                                                                                                <li class="list-group-item"><a target="_blank"  href="http://http://nouedu.net/page/how-to-apply">Apply for admission into Noun</a></li>
+                                                                                                <li class="list-group-item"><a target="_blank"  href="http://http://nouedu.net/courseware">Noun e Coursewares</a></li>
+                                                                                                <li class="list-group-item"><a  target="_blank" href="http://http://nouedu.net/user/login">Noun Login</a></li>
+                                                                                                <li class="list-group-item navigation"><a class="text-primary toStudentSubjects">student's result Analysis</a></li>
+                                                                                                <li class="list-group-item navigation"><a class="text-primary toClassPeformance">class perfomance</a></li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                        
+                                                                                        <hr/>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- END OF HOME SCREEN ON MOBILE DEVICES -->
+
+                        <!-- HOME SCREEN FOR LARGE SCREENS -->
+                        <div class="container-fluid hidden-xs hidden-sm">
+                            <div class="row">
+                                <div class="col-md-3">
+                                        <img src="./assets/img/noun.png" alt="School Logo" class="responsive logo transit">
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="side-nav1 hidden-xs hidden-sm">
+                                            <div class="panel panel-success ">
+                                                <div class="panel-heading"><i class="fa fa-university"></i>  National open University</div>
+                                                    <div class="panel-body hidden-xs hidden-sm">
+                                                        <p>The National Open University of Nigeria is a Federal Open and Distance Learning institution, the first of its kind in the West African sub-region. It is Nigeria's largest tertiary institution in terms of student numbers and is popularly referred to as 'NOUN'. 
+                                                            </p>
+                                                    </div>
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item"><a target="_blank"  href="http://http://nouedu.net/">Homepage</a></li>
+                                                        <li class="list-group-item"><a  target="_blank" href="http://http://nouedu.net/page/how-to-apply">Apply for admission</a></li>
+                                                        <li class="list-group-item"><a  target="_blank" href="http://http://nouedu.net/courseware">e Courseware</a></li>
+                                                        <li class="list-group-item"><a  target="_blank" href="http://http://nouedu.net/user/login">Login</a></li>
+                                                    
+                                                    </ul>
+                                                <hr/>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                <div class="col-md-3">
+                                        <div class="side-nav1 hidden-xs hidden-sm">
+                                                <div class="panel panel-success ">
+                                                        <div class="panel-heading"><i class="fa fa-user-circle-o"></i> Teachers</div>
+                                                        <div class="">
+                                                            <div class="panel-body">
+                                                                <p> Teachers at Noun, form a great majority of the impact the School can give,   Here, you can see each teacher's perfomances and how the students are coping under thier tutelage.
+                                                                </p>
+                                                            </div>
+                                                        <ul class="list-group">
+                                                                <li class="list-group-item navigation teacherProfilePage" ><a class="text-primary">Profile</a></li>
+                                                                <li class="list-group-item navigation"><a class="text-primary toSubjects">Subjects</a></li>
+                                                                <li class="list-group-item navigation"><a class="text-primary toTeachersStatistics">Statistics</a></li>
+                                                        </ul>
+                                                    <hr/>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div class="col-md-3">
+                                            <div class="side-nav1 hidden-xs hidden-sm">
+                                                    <div class="panel panel-success ">
+                                                            <div class="panel-heading"><i class="fa fa-user-o"></i> Students</div>
+                                                            <div class="">
+                                                                <div class="panel-body">
+                                                                    <p> 
+                                                                        Students educational strengths form the back bone of the school's goals.<br/>
+                                                                        Education in defination is the transmission of what is worthwhile from the custodians (teachers) to the learners. <br/>
+                                                                        Here, you'll be able to evaluate students and make value judgment about their capacity.<br/>
+                                                                        As well as spot areas they can be better.
+                                                                    </p>
+                                                                </div>
+                                                                <ul class="list-group ">
+                                                                        <li class="list-group-item"><a  target="_blank" href="http://http://nouedu.net/"> Noun school Homepage</a></li>
+                                                                        <li class="list-group-item"><a  target="_blank" href="http://http://nouedu.net/page/how-to-apply">Apply for admission into Noun</a></li>
+                                                                        <li class="list-group-item"><a target="_blank"  href="http://http://nouedu.net/courseware">Noun e Coursewares</a></li>
+                                                                        <li class="list-group-item"><a target="_blank"  href="http://http://nouedu.net/user/login">Noun Login</a></li>
+                                                                        <li class="list-group-item navigation"><a class="text-primary toStudentSubjects">student's result Analysis</a></li>
+                                                                        <li class="list-group-item navigation"><a class="text-primary toClassPeformance">class perfomance</a></li>
+                                                                    </ul>
+                                                        <hr/>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                        </div>
+                        <!-- END OF HOME SCREEN FOR LARGE SCREENS -->
+
+                        
+                        <!-- carousel part for teachers profile -->
+                <div class="item ">
+                    <h1 class="text-center">
+                        <i class="fa fa-user-circle-o"></i>
+                        Teachers Profile
+                    </h1>
+
+                        <div class="containter-fluid ">
+                            <div class="text-center">
+                                    <ul class="itemNav list-inline">
+                                            <li class="teacherProfilePage">
+                                                <a href="#" class="text-success">Profile</a> &nbsp;>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" class="text-default toSubjects">Subjects</a>&nbsp >
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="text-default toTeachersStatistics">Statistics</a>
+                                            </li>
+                                            
+                                        </ul>
+                            </div>
+        
+                            <div class="teachersProfile">
+                                <!-- the teachers profile output gets injected here -->
+                            </div>
+
+                        </div>
+                </div>
+                <!-- End of carousel part for teachers profile -->
+
+                
+                <div class="item ">
+                        <h1 class="text-center">
+                            <i class="fa fa-book"></i>
+                           School Subjects
+                        </h1>
+
+                        <div class="containter-fluid ">
+                                <div class="text-center">
+                                        <ul class="itemNav list-inline">
+                                                <li class="teacherProfilePage">
+                                                    <a href="#" class="text-default">Profile</a> &nbsp;>
+                                                    </li>
+
+                                                    <li>
+                                                <a href="#" class="text-success toSubjects">Subjects</a>&nbsp >
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="text-default toTeachersStatistics">Statistics</a>
+                                        </li>
+                                        
+                                    </ul>
+                        </div>
+    
+                        <div class="schoolSubjects">
+                        <!-- the schools subkjects gets injected here -->
+
+                        </div>
+
+                    </div>
+                </div>
+    
+
+
+                <!-- Carousel part for teachers statistics -->
+                <div class="item ">
+                    <h1 class="text-center">
+                        <i class="fa fa-user-circle-o"></i>
+                        Teachers Statistics
+                    </h1>
+
+                            <div class="containter-fluid ">
+                                    <div class="text-center">
+                                            <ul class="itemNav list-inline">
+                                                    <li class="teacherProfilePage">
+                                                        <a href="#" class="text-default">Profile</a> &nbsp;>
+                                                        </li>
+
+                                                        <li>
+                                                    <a href="#" class="text-default toSubjects">Subjects</a>&nbsp >
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="text-success toTeachersStatistics">Statistics</a>
+                                            </li>
+                                            
+                                        </ul>
+                            </div>
+        
+                            <div class="teachersStatistics">
+                            <!-- the schools subkjects gets injected here -->
+    
+                            </div>
+
+                        </div>
+                        
+                </div>
+                <!-- end of carousel part for teachers statistics -->
+
+
+                <div class="item students ">
+                    <h2 class="text-center">
+                        <i class="fa fa-user"></i>
+                        Students Analysis
+                    </h2>
+
+                            <div class="containter-fluid ">
+                                    <div class="text-center">
+                                            <ul class="itemNav list-inline">
+                                                    <li class="teacherProfilePage">
+                                                        <a href="#" class="text-default">Profile</a> &nbsp;>
+                                                        </li>
+
+                                                        <li>
+                                                    <a href="#" class="text-default toSubjects">Subjects</a>&nbsp >
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="text-success toTeachersStatistics">Statistics</a>
+                                            </li>
+                                            
+                                        </ul>
+                            </div>
+        
+                            <div class="studentsAnalysis">
+                            <!-- the schools subkjects gets injected here -->
+
+
+
+                            <div class="row">
+                                <div class=" col-md-offset-1 col-md-9">
+                                    <div class="studentPanel panel ">
+                                            <div class="panel-heading">
+                                                <h3 class="studentSpecificEvaluation panel-title">Students have an overall excellent performance</h3>
+                                            </div>
+
+                                            <div class="panel-body text center">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-sm-5 col-xs-5">
+                                                                <div class="subjectName">
+                                                                    <!-- the name of the subject would be injected here -->
+                                                                </div>
+
+                                                                <h4 class="text-left subjectTitle">
+                                                                       <b class="theSubjectName">
+                                                                            <!-- the subject title name will be injected here -->
+                                                                        </b>
+                                                                </h4>
+
+                                                            </div>
+
+                                                            <div class="col-xs-2 col-sm-2"></div>
+
+                                                            <div class="col-sm-2 col-xs-3">
+                                                                <span class="classPerformaceRating">
+                                                                    <!-- the class perfomance on a guage would be injected here -->
+                                                              </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+
+                                            <table class="table">
+                                                    <th>Name</th>
+                                                    <th>TMA 1 </th>
+                                                    <th>TMA 2</th>
+                                                    <th>TMA 3 </th>
+                                                    <th>EXAM </th>
+                                                    <th>Total </th>
+                                                    
+                                                <tr class="subjectOutput">
+                                                    <!-- the students data would be injected after this tag -->
+                                                </tr>
+                                                   
+                                            </table>
+                                    </div>
+
+                                </div>
+                              </div>
+    
+                            </div>
+
+                        </div>
+                        
+                </div>
+
+                <div class="item ">
+                        <h1 class="text-center">
+                            <i class="fa fa-book"></i>
+                            Student's result Analysis
+                        </h1>
+
+                        <div class="containter-fluid ">
+                                <div class="text-center">
+                                        <ul class="itemNav list-inline">
+                                                <li class="">
+                                                    <a href="#" class="text-success toStudentSubjects">student's result Analysis</a> &nbsp;>
+                                                    </li>
+
+                                                    <li>
+                                                <a href="#" class="text-default toClassPeformance">class performance</a>
+                                        </li>
+                                        
+                                    </ul>
+                        </div>
+    
+                        <div class="schoolSubjects">
+                        <!-- the schools subkjects gets injected here -->
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Carousel part for students statistics -->
+                <div class="item ">
+                        <h1 class="text-center">
+                            <i class="fa fa-user-circle-o"></i>
+                             Class performance
+                        </h1>
+    
+                                <div class="containter-fluid ">
+                                        <div class="text-center">
+                                                <ul class="itemNav list-inline">
+                                                        <li class="">
+                                                            <a href="#" class="text-default toStudentSubjects">student's result Analysis</a> &nbsp;>
+                                                            </li>
+        
+                                                            <li>
+                                                        <a href="#" class="text-success toClassPeformance">class performance</a>
+                                                </li>
+                                                
+                                            </ul>
+                                </div>
+            
+                                <div class="teachersStatistics">
+                                <!-- the schools subkjects gets injected here -->
+        
+                                </div>
+    
+                            </div>
+                            
+                    </div>
+                    <!-- end of carousel part for students statistics -->
+            </div>
+            <!-- <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> -->
+        </div>
+
+        <div class="modal fade" id="modal-id"  style="color: black;">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title text-center">Candidate's Information</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>
+                                        <img class="img-circle img-responsive img-fluid img-in-center" src="./assets/img/profilePicture.jpg" width="120px" alt="students profile picture">
+                                </h2>
+                            </div>
+
+                            <div class="col-md-6">
+                                <br/>
+                                <ul class="list-unstyled text-center">
+                                    <li>
+                                        Name : Adegbola Abiodun Joel
+                                    </li>
+
+                                    <li>
+                                        Matric Number : Nou144044003
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+</div>
+
+
+    <script src="./assets/plugins/jquery.js"></script>
+    <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
